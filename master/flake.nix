@@ -11,7 +11,6 @@
   inputs.src-blackvas_cli-master.ref   = "refs/heads/master";
   inputs.src-blackvas_cli-master.owner = "momeemt";
   inputs.src-blackvas_cli-master.repo  = "BlackvasCli";
-  inputs.src-blackvas_cli-master.dir   = "";
   inputs.src-blackvas_cli-master.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
