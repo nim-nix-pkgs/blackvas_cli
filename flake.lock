@@ -4,11 +4,13 @@
       "inputs": {
         "asynctools-master": "asynctools-master",
         "flakeNimbleLib": [
+          "blackvas_cli-master",
           "jester",
           "httpbeast",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "blackvas_cli-master",
           "jester",
           "httpbeast",
           "nixpkgs"
@@ -32,12 +34,14 @@
     "asynctools-master": {
       "inputs": {
         "flakeNimbleLib": [
+          "blackvas_cli-master",
           "jester",
           "httpbeast",
           "asynctools",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "blackvas_cli-master",
           "jester",
           "httpbeast",
           "asynctools",
@@ -62,12 +66,43 @@
         "type": "github"
       }
     },
-    "cligen": {
+    "blackvas_cli-master": {
       "inputs": {
+        "cligen": "cligen",
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
+        "jester": "jester",
         "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-blackvas_cli-master": "src-blackvas_cli-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1656283590,
+        "narHash": "sha256-A4EUVRs45LuSZec4YGoM6zx1oxTLVwRADPKGPnAULiA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "blackvas_cli",
+        "rev": "b02f4030ce7b3ba3715bfbc3b8f53b699fbc5cc9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "blackvas_cli",
+        "type": "github"
+      }
+    },
+    "cligen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "blackvas_cli-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "blackvas_cli-master",
           "nixpkgs"
         ],
         "src-cligen-v1_5_24": "src-cligen-v1_5_24"
@@ -114,10 +149,12 @@
       "inputs": {
         "asynctools": "asynctools",
         "flakeNimbleLib": [
+          "blackvas_cli-master",
           "jester",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "blackvas_cli-master",
           "jester",
           "nixpkgs"
         ],
@@ -143,10 +180,12 @@
     "jester": {
       "inputs": {
         "flakeNimbleLib": [
+          "blackvas_cli-master",
           "flakeNimbleLib"
         ],
         "httpbeast": "httpbeast",
         "nixpkgs": [
+          "blackvas_cli-master",
           "nixpkgs"
         ],
         "src-jester-v0_5_0": "src-jester-v0_5_0"
@@ -170,8 +209,9 @@
     },
     "nixpkgs": {
       "locked": {
-        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
-        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
         "type": "path"
       },
       "original": {
@@ -181,11 +221,9 @@
     },
     "root": {
       "inputs": {
-        "cligen": "cligen",
+        "blackvas_cli-master": "blackvas_cli-master",
         "flakeNimbleLib": "flakeNimbleLib",
-        "jester": "jester",
-        "nixpkgs": "nixpkgs",
-        "src-blackvas_cli-master": "src-blackvas_cli-master"
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-asynctools-master": {
